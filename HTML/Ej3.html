@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+        <label>Sexo:</label>
+        <input type="radio" id="hombre" name="sexo" value="hombre">
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="mujer" name="sexo" value="mujer">
+        <label for="mujer">Mujer</label><br><br>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="poblacion">Población:</label>
+        <select id="poblacion" name="poblacion">
+            <option value="CDMX">CDMX</option>
+            <option value="EdoMex">EdoMex</option>
+            <option value="Guadalajara">Guadalajara</option>
+           
+        </select><br><br>
+
+        <label for="descripcion">Descripción:</label><br> 
+        <textarea id="descripcion" name="descripcion" rows="4" cols="50" placeholder=></textarea><br><br>
+
+        <input type="checkbox" id="informacion" name="informacion">
+        <label for="informacion">Deseo recibir información sobre novedades y ofertas</label><br>
+
+        <input type="checkbox" id="condiciones" name="condiciones" required>
+        <label for="condiciones">Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
