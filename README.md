@@ -1,8 +1,6 @@
 # Servicio Social
 
-Mi nombre es **Fernando Flores Zaragoza**, soy un estudiante de Ingeniería en Computación proveniente de la **Universidad Nacional Autónoma de México** (UNAM). Actualmente, estoy cursando el 8º semestre y realizo mi servicio social para la **Fiscalía General de la República**.
-
-Estos son algunos de los ejercicios practicados durante mi Servicio Social.
+Estos son algunos de los ejercicios practicados durante mi Servicio Social especificamente de PYTHON.
 
 ## Ejercicios de Python
 
