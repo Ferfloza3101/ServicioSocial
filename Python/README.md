@@ -74,3 +74,22 @@ Estos son algunos de los ejercicios practicados durante mi Servicio Social espec
     - **La información del contacto debe mostrarse igual que en el ejercicio 13.**
     - **Al cerrar el programa, proceder a guardar en el archivo de texto.**
     - [Enlace al ejercicio 14](https://github.com/Ferfloza3101/ServicioSocial/blob/main/14_txt.py)
+   
+15. **Tomando como base el ejercicio 14 vamos a solicitar más información de contacto, para ello vamos a crear una clase llamada Persona.**
+
+    Sus atributos son: nombre, apellido paterno, apellido materno, genero, y edad.
+
+    Generar:
+    - **Un constructor, donde los datos pueden estar vacíos.**
+    - **Los setters y getters para cada uno de los atributos. Hay que validar las entradas de datos.**
+    - **Método `mostrar_informacion()`: Muestra los datos de la persona.**
+    - **Método `actualizar_nombre()`: Se actualiza la información y se devuelve un valor lógico indicando si fue actualizado**
+    - **Método `actualizar_apellido_paterno()`: Se actualiza la información y se devuelve un valor lógico indicando si fue actualizado.**
+    - **Método `actualizar_apellido_materno()`: Se actualiza la información y se devuelve un valor lógico indicando si fue actualizado.**
+    - **Método `actualizar_edad()`: Se actualiza la información y se devuelve un valor lógico indicando si fue actualizado.**
+    - **Método `actualizar_genero()`: Se actualiza la información y se devuelve un valor lógico indicando si fue actualizado.**
+    - **Utilizaremos la clase para recabar esa información y mantendremos la funcionalidad del ejercicio 14.**
+    - [Enlace al ejercicio 15](https://github.com/Ferfloza3101/ServicioSocial/blob/main/15_New.py)
+
+
+ 
