@@ -1,0 +1,7 @@
+# Aplicación con Vulnerabilidad NoSQL
+
+## Instrucciones
+
+Las instrucciones para la aplicación creada con una vulnerabilidad NoSQL son las siguientes:
+
+1. Descargar todos los archivos tal cual estan por la jerarquia de orden que se otorgo, posteriormente hay que tener instalado node.js y los "node_modules" que importan las librerias para la conexion con mogodb, y express para el servidor, posteriormene lanzar el servidor desde la terminal con el archivo server.js, una vez lanzado el servidor, abriremos la pagina html donde tendremos el formulario el cual no funcionara ningun usuario que no se encuentre en la base de datos, y para probar la existencia de vulnerabilidad, utilize la extension de Thunder Client en visual studio, que hara de funcion como una API, en donde pondremos la direccion a donde se mandan los datos, en este caso (http://localhost:3000/login), y desde la seccion body, y mandando un Json otorgaremos un repeat del siguiente comando: { "user": { "$ne": 1 }, "password": { "$ne": 1 } } lo que hara que iguale usuario y contraseña a 1, y dicho repeat terminara entregandonos en consola un usuario y una contraseña valida de la base de datos de mongodb de la coleccion o carpeta que hayamos puesto en nuestro codigo. Por ultimo solo quedaria probar que el usuario y la contraseña que nos otorgo si puede acceder en la pagina que creamos.
