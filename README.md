@@ -3,7 +3,7 @@
 
 ## Sobre mí
 
-Mi nombre es **Fernando Flores Zaragoza**. Soy estudiante de la Facultad de Estudios Superiores Aragón de la Universidad Nacional Autónoma de México (UNAM), actualmente cursando el octavo semestre de la carrera de Ingeniería en Computación. Este repositorio contiene algunos de los trabajos realizados durante mi Servicio Social, en los cuales he aplicado y desarrollado mis habilidades en programación.
+Mi nombre es **Fernando Flores Zaragoza**. Soy estudiante de la Facultad de Estudios Superiores Aragón de la Universidad Nacional Autónoma de México (UNAM), actualmente cursando el octavo semestre de la carrera de Ingeniería en Computación. Este repositorio contiene algunos de los trabajos realizados durante mi Servicio Social y mi Universidad, en los cuales he aplicado y desarrollado mis habilidades en programación.
 
 ## Descripción
 
