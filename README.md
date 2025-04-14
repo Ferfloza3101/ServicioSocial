@@ -7,17 +7,24 @@ Mi nombre es **Fernando Flores Zaragoza**. Soy estudiante de la Facultad de Estu
 
 ## Descripción
 
-Por el momento tenemos ejercicios en JavaScript, Python y HTML. Cada sección contiene una carpeta con los archivos correspondientes a los ejercicios que he realizado. A continuación, puedes encontrar los enlaces a cada una de estas carpetas.
+Aqui se encontraran diversos ejercicios hechos por mi parte de diferentes lenguajes y propositos.
 
 ## Estructura del repositorio
 
 1. **Python**
-   - [Ejercicios de Python](https://github.com/Ferfloza3101/ServicioSocial/tree/main/Python)
+   - [Ejercicios de Python](https://github.com/Ferfloza3101/ServicioSocial/tree/main/Python).
 
 2. **JavaScript**
-   - [Ejercicios de JavaScript](https://github.com/Ferfloza3101/ServicioSocial/tree/main/JavaScript)
+   - [Ejercicios de JavaScript](https://github.com/Ferfloza3101/ServicioSocial/tree/main/JavaScript).
 
 3. **HTML**
-   - [Ejercicios de HTML](https://github.com/Ferfloza3101/ServicioSocial/tree/main/HTML)
+   - [Ejercicios de HTML](https://github.com/Ferfloza3101/ServicioSocial/tree/main/HTML).
+
+4. **VULNERABILIDADES**
+   - [Vulnerabilidad NoSQL](https://github.com/Ferfloza3101/ServicioSocial/tree/main/NoSQL).
+
+4. **PROYECTOS WEB**
+   - [Ferreteria Web](https://github.com/Ferfloza3101/ServicioSocial/tree/main/Proyectos%20web/Ferreteria%20Web).
+
 
 Cualquier aspecto respecto a mis trabajos, quedo al pendiente de sugerencias y correcciones. Sin mas, un Saludo.
