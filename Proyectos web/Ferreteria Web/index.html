@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página de Contacto y Navegación</title>
+  <link rel="stylesheet" href="./CSS/styles.css" />
+  <link
+      href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
+      rel="stylesheet"/>
+     <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"/>
+</head>
+
+<body>
+  <!--Informacion de Contacto-->
+  <div class="top-bar" id="contactBar">
+    <div class="container">
+      <div class="contact-info">
+        <span class="phone-icon" id="phoneIcon"><i class="fas fa-phone outline-icon" ></i></span>
+        <span class="availability" id="availabilityText">
+          <strong>+1234567890</strong> Disponible de Lunes a Domingo de 8:00 a 17:00 horas
+        </span>
+      </div>
+      <div class="currency-selector">
+        <select id="currencySelector">
+          <option value="usd">Dólares</option>
+          <option value="ars">Pesos</option>
+          <option value="eur">Euros</option>
+          <option value="jpy">Yenes</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2da Linea Hedear -->
+  <div class="header-main" id="headerMain">
+    <div class="container">
+
+      <!-- Logo -->
+      <div class="logo">
+        <h1><strong>FLAMAS</strong></h1>
+      </div>
+      
+      <!-- Barra de búsqueda en el centro -->
+      <div class="search-container">
+        <div class="search-input-wrapper">
+          <i class="fas fa-search outline-icon"></i>
+          <input type="text" id="searchInput" placeholder="Busca tu producto" />
+        </div>
+      </div>
+
+      <!--Elementos del usuario-->
+      <div class="user-actions">
+        <div class="action-item" id="wishlist">
+          <span class="icon"><i class="far fa-heart outline-icon"></i></span>
+          <span class="label">Wishlist</span>
+        </div>
+
+        <div class="action-item" id="compare">
+          <span class="icon"><i class="fas fa-exchange-alt outline-icon"></i></span>
+          <span class="label">Compara</span>
+        </div>
+
+        <div class="action-item" id="account">
+          <span class="icon"><i class="fas fa-user outline-icon"></i></span>
+          <span class="label">Mi Cuenta</span>
+        </div>
+        <div class="action-item" id="checkout">
+          <span class="icon"><i class="fas fa-shopping-bag outline-icon"></i></span>
+          <span class="label">Checkout</span>
+        </div>
+
+        <div class="action-item" id="cart">
+          <span class="icon"><i class="fas fa-shopping-cart outline-icon"></i></span>
+          <span class="label">Carrito</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Navegacion-->
+  <nav class="navbar" id="navbar">
+    <ul class="nav-list">
+      <li class="nav-item dropdown-parent">
+        <a href="#">Herramientas</a>
+        <ul class="dropdown">
+          <li><a href="#">Herramienta 1</a></li>
+          <li><a href="#">Herramienta 2</a></li>
+          <li><a href="#">Herramienta 3</a></li>
+          <li><a href="#">Herramienta 4</a></li>
+          <li><a href="#">Herramienta 5</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown-parent">
+        <a href="#">Blog</a>
+        <ul class="dropdown">
+          <li><a href="#">Artículo 1</a></li>
+          <li><a href="#">Artículo 2</a></li>
+          <li><a href="#">Artículo 3</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="#">Tienda</a></li>
+      <li class="nav-item"><a href="#">Páginas</a></li>
+      <li class="nav-item"><a href="#">Elementos</a></li>
+    </ul>
+  </nav>
+
+<!--Banner Principal-->
+<div class="banner-container">
+  <div class="main-container">
+    <div class="hero-banner">
+      <div class="banner-wrapper">
+        <div class="banner-content">
+          <div class="banner-label small">Solo por esta semana</div>
+          <div class="banner-label large">AHORRA 20%</div>
+          <h1 class="product-name">TALADRO ELECTRICO</h1>
+          <p class="product-price">$499 MXN</p>
+          <div class="buy-now">comprar ahora</div>
+        </div>
+        <div class="banner-image">
+          <img src="./ASSETS/Taladro1.jpg" alt="Taladro Eléctrico">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Categorias de Herramientas-->
+<section class="categories-section">
+  <div class="container">
+
+    <!-- Herramientas de fuerza -->
+    <div class="category-box" onclick="alert('Herramientas de fuerza')">
+      <i class="fas fa-hammer"></i>
+      <p>Herramientas de fuerza</p>
+    </div>
+    
+    <!-- Herramientas de mano -->
+    <div class="category-box" onclick="alert('Herramientas de mano')">
+      <i class="fas fa-wrench"></i>
+      <p>Herramientas de mano</p>
+    </div>
+    
+    <!-- Herramientas de plomeria -->
+    <div class="category-box" onclick="alert('Herramientas de plomeria')">
+      <i class="fas fa-tint"></i>
+      <p>Herramientas de plomeria</p>
+    </div>
+    
+    <!-- Herramientas de pintura -->
+    <div class="category-box" onclick="alert('Herramientas de carpinteria')">
+      <i class="fas fa-screwdriver"></i>
+      <p>Herramientas de carpinteria</p>
+    </div>
+    
+    <!-- Herramientas de pintura -->
+    <div class="category-box" onclick="alert('Herramientas de pintura')">
+      <i class="fas fa-paint-roller"></i>
+      <p>Herramientas de pintura</p>
+    </div>
+    
+    <!-- Herramientas de medición -->
+    <div class="category-box" onclick="alert('Herramientas de medición')">
+      <i class="fas fa-ruler"></i>
+      <p>Herramientas de medición</p>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Weekly Featured Products -->
+<section class="featured-products">
+  <div class="container featured-container">
+    <div class="featured-header">
+      <h2 class="section-title">
+        <span class="title-marker"></span>
+        WEEKLY FEATURED PRODUCTS
+      </h2>
+      <div class="header-arrows">
+        <i class="fas fa-chevron-left"></i>
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+
+    <!--Productos-->
+    <div class="products-grid">
+
+      <!-- Producto 1-->
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="./ASSETS/TaladroImpacto.jpg" alt="Taladro Impacto">
+          <div class="product-icons">
+            <span class="icon wishlist-icon"><i class="fas fa-heart"></i></span>
+            <span class="icon compare-icon"><i class="fas fa-exchange-alt"></i></span>
+            <span class="icon view-icon"><i class="fas fa-eye"></i></span>
+          </div>
+          <!--Temporizador-->
+          <div class="countdown-feature">
+            <i class="fas fa-clock"></i>
+            <span><strong>12:34:56</strong></span>
+          </div>
+        </div>
+        <div class="product-details">
+          <p class="product-category">HERRAMIENTAS DE FUERZA</p>
+          <h3 class="product-title">TALADRO IMPACTO</h3>
+          <!-- Barra de precios-->
+          <div class="price-cart-bar">
+            <div class="price-info">
+              <span class="current-price">$499 MXN</span>
+              <span class="previous-price">$599 MXN</span>
+            </div>
+            <div class="add-cart-action">
+              <i class="fas fa-shopping-cart"></i>
+              <span>AGREGAR</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--Producto 2-->
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="./ASSETS/sierraCircular.jpg" alt="Sierra Circular">
+          <div class="product-icons">
+            <span class="icon wishlist-icon"><i class="fas fa-heart"></i></span>
+            <span class="icon compare-icon"><i class="fas fa-exchange-alt"></i></span>
+            <span class="icon view-icon"><i class="fas fa-eye"></i></span>
+          </div>
+        </div>
+        <div class="product-details">
+          <p class="product-category">HERRAMIENTAS DE MANO</p>
+          <h3 class="product-title">SIERRA CIRCULAR</h3>
+          <div class="price-cart-bar">
+            <div class="price-info">
+              <span class="current-price">$399 MXN</span>
+              <span class="previous-price">$489 MXN</span>
+            </div>
+            <div class="add-cart-action">
+              <i class="fas fa-shopping-cart"></i>
+              <span>AGREGAR</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--Producto 3-->
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="./ASSETS/Inglesa.jpg" alt="Llave Inglesa">
+          <div class="product-icons">
+            <span class="icon wishlist-icon"><i class="fas fa-heart"></i></span>
+            <span class="icon compare-icon"><i class="fas fa-exchange-alt"></i></span>
+            <span class="icon view-icon"><i class="fas fa-eye"></i></span>
+          </div>
+        </div>
+        <div class="product-details">
+          <p class="product-category">HERRAMIENTAS DE MANO</p>
+          <h3 class="product-title">LLAVE INGLESA</h3>
+          <div class="price-cart-bar">
+            <div class="price-info">
+              <span class="current-price">$299 MXN</span>
+              <span class="previous-price">$359 MXN</span>
+            </div>
+            <div class="add-cart-action">
+              <i class="fas fa-shopping-cart"></i>
+              <span>AGREGAR</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Producto 4 -->
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="./ASSETS/Martillo.jpg" alt="Martillo de Fuerza">
+          <div class="product-icons">
+            <span class="icon wishlist-icon"><i class="fas fa-heart"></i></span>
+            <span class="icon compare-icon"><i class="fas fa-exchange-alt"></i></span>
+            <span class="icon view-icon"><i class="fas fa-eye"></i></span>
+          </div>
+        </div>
+        <div class="product-details">
+          <p class="product-category">HERRAMIENTAS DE CARPINTERIA</p>
+          <h3 class="product-title">MARTILLO DE FUERZA</h3>
+          <div class="price-cart-bar">
+            <div class="price-info">
+              <span class="current-price">$249 MXN</span>
+              <span class="previous-price">$299 MXN</span>
+            </div>
+            <div class="add-cart-action">
+              <i class="fas fa-shopping-cart"></i>
+              <span>AGREGAR</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--Banners Secundarios-->
+<div class="extra-promo-banners">
+  <div class="main-container">
+    <!-- Primer Banner -->
+    <div class="extra-promo-banner">
+      <div class="extra-banner-content">
+        <div class="extra-promo-label">Mejores ofertas</div>
+        <div class="extra-promo-ahorra">ahorra</div>
+        <div class="extra-promo-hasta">
+          <span class="extra-hasta-word">HASTA</span>
+          <span class="extra-promo-percentage">20%</span>
+        </div>
+        <div class="extra-promo-description">
+          La oferta cubre toda nuestra selección de herramientas eléctricas, independientemente del precio del artículo antes del descuento.
+        </div>
+      </div>
+      <!-- Columna de imagen -->
+      <div class="extra-banner-image">
+        <img src="./ASSETS/banner111.jpg" alt="Promoción 1">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Segundo Banner Promocional Alternativo -->
+  <div class="extra-promo-banner-alt">
+    <div class="extra-banner-alt-content">
+      <h2 class="alt-heading">Herramientas de Plomeria</h2>
+      <p class="alt-subheading">Con un</p>
+      <p class="alt-discount">25% de descuento</p>
+      <p class="alt-description">
+      <span class="alt-asterisk">*</span>Esto significa que si eres lo suficientemente rápido para aprovechar la oferta,<br>ahorrarás mucho dinero.
+      </p>
+    </div>
+  </div>
+</div>
+
+  <!-- Sección de Productos Especiales -->
+  <div class="productos-especiales-section">
+  <!-- Columna 1: Productos Nuevos -->
+  <div class="productos-columna">
+    <div class="productos-header">
+      <span class="header-square"></span>
+      <h2 class="productos-titulo">Productos Nuevos</h2>
+    </div>
+    <div class="productos-lista">
+      <!-- Producto 1: Con descuento -->
+      <div class="producto-card">
+        <div class="producto-imagen">
+          <img src="./ASSETS/Taladro1.jpg" alt="Producto 1">
+        </div>
+        <div class="producto-detalles">
+          <span class="producto-categoria">Herramienta de Fuerza</span>
+          <h3 class="producto-nombre">TALADRO INALÁMBRICO</h3>
+          <div class="producto-calificacion">
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star">★</span>
+          </div>
+          <div class="producto-precios">
+            <p class="precio-oferta">$1,200 MXN</p>
+            <p class="precio-original"><del>$1,500 MXN</del></p>
+          </div>
+          <button class="agregar-carrito">
+            <span class="icon-carrito"><i class="fas fa-shopping-cart outline-icon"></i></span> ADD
+          </button>
+        </div>
+      </div>
+      
+      <!-- Producto 2: Precio normal -->
+      <div class="producto-card">
+        <div class="producto-imagen">
+          <img src="./ASSETS/IMPACTO.jpg" alt="Producto 2">
+        </div>
+        <div class="producto-detalles">
+          <span class="producto-categoria">Herramienta de mano</span>
+          <h3 class="producto-nombre">LLAVE DE IMPACTO</h3>
+          <div class="producto-calificacion">
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <div class="producto-precios">
+            <p class="precio-regular">$800 MXN</p>
+          </div>
+          <button class="agregar-carrito">
+            <span class="icon-carrito"><i class="fas fa-shopping-cart outline-icon"></i></span> ADD
+          </button>
+        </div>
+      </div>
+      
+      <!-- Producto 3: Con descuento -->
+      <div class="producto-card">
+        <div class="producto-imagen">
+          <img src="./ASSETS/T.jpg" alt="Producto 3">
+        </div>
+        <div class="producto-detalles">
+          <span class="producto-categoria">Herramienta de Medicion</span>
+          <h3 class="producto-nombre">Regla T</h3>
+          <div class="producto-calificacion">
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <div class="producto-precios">
+            <p class="precio-oferta">$2,500 MXN</p>
+            <p class="precio-original"><del>$3,000 MXN</del></p>
+          </div>
+          <button class="agregar-carrito">
+            <span class="icon-carrito"><i class="fas fa-shopping-cart outline-icon"></i></span> ADD
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Columna 2: Productos Especiales -->
+  <div class="productos-columna">
+    <div class="productos-header">
+      <span class="header-square"></span>
+      <h2 class="productos-titulo">Productos Especiales</h2>
+    </div>
+    <div class="productos-lista">
+      <!-- Producto 1: Precio normal -->
+      <div class="producto-card">
+        <div class="producto-imagen">
+          <img src="./ASSETS/sierraCircular.jpg" alt="Producto 4">
+        </div>
+        <div class="producto-detalles">
+          <span class="producto-categoria">Herramienta de Plomeria</span>
+          <h3 class="producto-nombre">SIERRA CIRCULAR</h3>
+          <div class="producto-calificacion">
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star">★</span>
+          </div>
+          <div class="producto-precios">
+            <p class="precio-regular">$1,100 MXN</p>
+          </div>
+          <button class="agregar-carrito">
+            <span class="icon-carrito"><i class="fas fa-shopping-cart outline-icon"></i></span> ADD
+          </button>
+        </div>
+      </div>
+      
+      <!-- Producto 2: Con descuento -->
+      <div class="producto-card">
+        <div class="producto-imagen">
+          <img src="./ASSETS/Inglesa.jpg" alt="Producto 5">
+        </div>
+        <div class="producto-detalles">
+          <span class="producto-categoria">Herramientas de mano</span>
+          <h3 class="producto-nombre">LLAVE INGLESA</h3>
+          <div class="producto-calificacion">
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <div class="producto-precios">
+            <p class="precio-oferta">$600 MXN</p>
+            <p class="precio-original"><del>$750 MXN</del></p>
+          </div>
+          <button class="agregar-carrito">
+            <span class="icon-carrito"><i class="fas fa-shopping-cart outline-icon"></i></span> ADD
+          </button>
+        </div>
+      </div>
+      
+      <!-- Producto 3: Con descuento -->
+      <div class="producto-card">
+        <div class="producto-imagen">
+          <img src="./ASSETS/Desarmador.jpg" alt="Producto 6">
+        </div>
+        <div class="producto-detalles">
+          <span class="producto-categoria">Herramienta de Mano</span>
+          <h3 class="producto-nombre">DESARMADOR</h3>
+          <div class="producto-calificacion">
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star">★</span>
+          </div>
+          <div class="producto-precios">
+            <p class="precio-oferta">$2,800 MXN</p>
+            <p class="precio-original"><del>$3,500 MXN</del></p>
+          </div>
+          <button class="agregar-carrito">
+            <span class="icon-carrito"><i class="fas fa-shopping-cart outline-icon"></i></span> ADD
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Columna 3: Productos -->
+  <div class="productos-columna">
+    <div class="productos-header">
+      <span class="header-square"></span>
+      <h2 class="productos-titulo">Productos</h2>
+    </div>
+    <div class="productos-lista">
+      <!-- Producto 1: Precio normal -->
+      <div class="producto-card">
+        <div class="producto-imagen">
+          <img src="./ASSETS/serrucho.jpg" alt="Producto 7">
+        </div>
+        <div class="producto-detalles">
+          <span class="producto-categoria">Herramientas de carpinteria</span>
+          <h3 class="producto-nombre">Serrucho</h3>
+          <div class="producto-calificacion">
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <div class="producto-precios">
+            <p class="precio-regular">$1,300 MXN</p>
+          </div>
+          <button class="agregar-carrito">
+            <span class="icon-carrito"><i class="fas fa-shopping-cart outline-icon"></i></span> ADD
+          </button>
+        </div>
+      </div>
+      
+      <!-- Producto 2: Con descuento -->
+      <div class="producto-card">
+        <div class="producto-imagen">
+          <img src="./ASSETS/Martillo.jpg" alt="Producto 8">
+        </div>
+        <div class="producto-detalles">
+          <span class="producto-categoria">Herramienta de mano</span>
+          <h3 class="producto-nombre">MARTILLO</h3>
+          <div class="producto-calificacion">
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <div class="producto-precios">
+            <p class="precio-oferta">$500 MXN</p>
+            <p class="precio-original"><del>$650 MXN</del></p>
+          </div>
+          <button class="agregar-carrito">
+            <span class="icon-carrito"><i class="fas fa-shopping-cart outline-icon"></i></span> ADD
+          </button>
+        </div>
+      </div>
+      
+      <!-- Producto 3: Precio normal -->
+      <div class="producto-card">
+        <div class="producto-imagen">
+          <img src="./ASSETS/pinzas.jpg" alt="Producto 9">
+        </div>
+        <div class="producto-detalles">
+          <span class="producto-categoria">Herramientas de mano</span>
+          <h3 class="producto-nombre">Pinzas de Mano</h3>
+          <div class="producto-calificacion">
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star">★</span>
+          </div>
+          <div class="producto-precios">
+            <p class="precio-regular">$2,000 MXN</p>
+          </div>
+          <button class="agregar-carrito">
+            <span class="icon-carrito"><i class="fas fa-shopping-cart outline-icon"></i></span> ADD
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Sección From the Blog -->
+<section class="blog-section">
+  <div class="blog-container">
+    <div class="blog-heading">
+      <span class="title-marker"></span>
+      <h2>FROM THE BLOG</h2>
+    </div>
+    <div class="blog-posts">
+      <!-- Blog post 1 -->
+      <div class="blog-post">
+        <div class="blog-image">
+          <img src="./ASSETS/11.jpg" alt="Novedades en Herramientas">
+        </div>
+        <div class="blog-info">
+          <h3 class="post-title">NOVEDADES EN HERRAMIENTAS</h3>
+          <div class="post-meta">
+            <span class="post-date">12 MAR 2025</span>
+            <i class="fas fa-comment"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Blog post 2 -->
+      <div class="blog-post">
+        <div class="blog-image">
+          <img src="./ASSETS/2.jpg" alt="TENDENCIAS DE DISEÑO">
+        </div>
+        <div class="blog-info">
+          <h3 class="post-title">TENDENCIAS DE DISEÑO</h3>
+          <div class="post-meta">
+            <span class="post-date">05 FEB 2025</span>
+            <i class="fas fa-comment"></i>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Blog post 3 -->
+      <div class="blog-post">
+        <div class="blog-image">
+          <img src="./ASSETS/33.jpg" alt="MANTENIMIENTO EFICIENTE">
+        </div>
+        <div class="blog-info">
+          <h3 class="post-title">MANTENIMIENTO EFICIENTE</h3>
+          <div class="post-meta">
+            <span class="post-date">20 ENE 2025</span>
+            <i class="fas fa-comment"></i>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Blog post 4 -->
+      <div class="blog-post">
+        <div class="blog-image">
+          <img src="./ASSETS/4.jpg" alt="CONSEJOS PARA COMPRA">
+        </div>
+        <div class="blog-info">
+          <h3 class="post-title">CONSEJOS PARA COMPRA</h3>
+          <div class="post-meta">
+            <span class="post-date">15 DIC 2024</span>
+            <i class="fas fa-comment"></i>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.blog-posts -->
+  </div><!-- /.blog-container -->
+</section>
+
+<!-- Sección Newsletter -->
+<section class="newsletter-section">
+  <div class="newsletter-container">
+    <div class="newsletter-left">
+      <div class="newsletter-header">
+        <span class="title-marker"></span>
+        <h2>NEWSLETTER</h2>
+        <p class="newsletter-description"><strong>our diy tips and special promo offers are bargain</strong></p>
+      </div>
+    </div>
+    <div class="newsletter-right">
+      <div class="newsletter-form">
+        <div class="email-box">
+          <i class="fas fa-envelope"></i>
+          <input type="email" placeholder="Ingresa tu correo" />
+        </div>
+        <button class="subscribe-button">suscribirte</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="info-section">
+  <div class="info-container">
+    
+    <!-- Columna 1: About -->
+    <div class="info-column">
+      <span class="dash"></span>
+      <h3 class="info-title">ABOUT</h3>
+      <p class="info-text">
+        Millones de hogares están a punto de realizar reformas, sin mencionar las reparaciones rutinarias y el mantenimiento de la integridad. Por eso es tan importante encontrar una buena ferretería donde puedas encontrar herramientas a buen precio.
+      </p>
+    </div>
+    
+    <!-- Columna 2: Recientes Comentarios -->
+    <div class="info-column">
+      <span class="dash"></span>
+      <h3 class="info-title">RECENTES COMENTARIOS</h3>
+      <!-- Primer comentario -->
+
+      <div class="comment-item">
+        <div class="admin-line">
+          <span class="admin">ADMIN</span>
+          <span class="admin-on">ON</span>
+        </div>
+        <p class="comment-text">COMBO DE HERRAMIENTAS DE CARPINTERIA</p>
+      </div>      
+      <!-- Segundo comentario -->
+
+      <div class="comment-item">
+        <div class="admin-line">
+          <span class="admin">ADMIN</span>
+          <span class="admin-on">ON</span>
+        </div>
+        <p class="comment-text">COMBO DE HERRAMIENTAS DE MEDICION</p>
+      </div>
+
+      <!-- Tercer comentario -->
+      <div class="comment-item">
+        <div class="admin-line">
+          <span class="admin">ADMIN</span>
+          <span class="admin-on">ON</span>
+        </div>
+        <p class="comment-text">COMBO DE HERRAMIENTAS DE PLOMERIA</p>
+      </div>
+    </div>
+
+     <!-- Columna 3: Tags -->
+    <div class="info-column">
+      <span class="dash"></span>
+      <h3 class="info-title">TAGS</h3>
+      <div class="tags-container">
+        <span class="tag">CUTTER</span>
+        <span class="tag">MARTILLO</span>
+        <span class="tag">PODER</span>
+        <span class="tag">HERRAMIENTAS</span>
+        <span class="tag">CASAS</span>
+        <span class="tag">REPARACION</span>
+      </div>
+    </div>
+
+    
+    <!-- Contacto -->
+      <div class="info-column">
+        <span class="dash"></span>
+        <h3 class="info-title">CONTACTO</h3>
+        
+        <!-- Teléfono -->
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span class="contact-text">1234567890</span>
+        </div>
+        
+        <!-- Horario -->
+        <div class="contact-item">
+          <i class="fas fa-clock"></i>
+          <span class="contact-text">7 dias a la semana de 9:00 am a 7:00 pm</span>
+        </div>
+        
+        <!-- Email -->
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span class="contact-text">herramientas3101@outlook.com</span>
+        </div>
+      </div>
+</section>
+
+<!-- Pagos y Redes -->
+<section class="final-section">
+  <div class="final-container">
+    <div class="final-left">
+      <div class="final-brand">
+        <h1>FLAMAS</h1>
+      </div>
+      <div class="final-info">
+        <p class="final-theme-text">
+          <span class="theme-title">FLAMAS THEME</span> SE UTILIZA ÚNICAMENTE CON ENTRADAS DE WORDPRESS (RSS) Y COMENTARIOS (RSS)
+        </p>
+        <div class="final-privacy">
+          <i class="fas fa-lock"></i>
+          <span>POLITICAS DE PRIVACIDAD</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Redes Sociales -->
+
+    <div class="final-social">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-linkedin-in"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+    
+    <!--Métodos de Pago-->
+    <div class="final-payments">
+      <i class="fab fa-cc-visa"></i>
+      <i class="fab fa-cc-mastercard"></i>
+      <i class="fab fa-cc-paypal"></i>
+      <i class="fab fa-amazon-pay"></i>
+      <i class="fab fa-cc-skrill"></i>
+    </div>
+  </div>
+</section>
+
+  <script src="main.js"></script>
+</body>
+</html>
