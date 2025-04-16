@@ -87,7 +87,7 @@ font-size: 2rem;
 margin: 0;
 font-family: 'Georgia', serif; 
 color: #333;
-background-color: yellow;
+background-color: #FFCC00;
 display: inline-block;
 padding: 0.3rem 0.5rem;
 }
@@ -273,6 +273,7 @@ padding: 0.3rem 0.5rem;
 /*Banner Principal*/
 .hero-banner {
 display: flex;
+max-width: 1400px;
 align-items: center;
 justify-content: space-between;
 background-color: #fff;      
@@ -302,14 +303,14 @@ gap: 0rem;
 
 .banner-label.small {
 background-color: black;
-color: yellow;                 
+color: #FFCC00;                 
 font-size: 1.0rem;
 padding: 0.3rem 0.5rem;
 text-transform: uppercase;
 }
 
 .banner-label.large {
-background-color: yellow;      
+background-color: #FFCC00;      
 color: black;      
 font-size: 3.5rem;
 padding: 0.5rem 1rem;
@@ -371,7 +372,7 @@ display: inline-block;
 }
 
 .category-box {
-  background-color: yellow;
+  background-color: #FFCC00;
   color: black;
   text-align: center;
   flex: 1;
@@ -445,7 +446,7 @@ color: #333;
 display: inline-block;
 width: 8px;
 height: 8px;
-background-color: yellow;
+background-color: #FFCC00;
 margin-right: 0.5rem;
 }
 
@@ -582,7 +583,7 @@ text-decoration: line-through;
 
 .price-cart-bar .add-cart-action {
 flex: 1;
-background-color: yellow;
+background-color: #FFCC00;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -611,10 +612,14 @@ font-weight: bold;
 
 .extra-promo-banners {
   display: flex;
+  max-width: 1350px;
   flex-direction: row;      
   justify-content: space-between;  
   gap: 1rem;
-  margin: 2rem 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   width: 100%;
 }
 
@@ -643,7 +648,7 @@ gap: 0.5rem;
 }
 
 .extra-promo-label {
-background-color: yellow;
+background-color: #FFCC00;
 color: black;
 font-size: 0.8rem;
 padding: 0.3rem 0.5rem;
@@ -671,7 +676,7 @@ text-transform: uppercase;
 
 .extra-promo-percentage {
 font-size: 4.5rem;
-color: yellow;
+color: #FFCC00;
 text-transform: uppercase;
 }
 
@@ -696,7 +701,7 @@ object-fit: cover;
 .extra-promo-banner-alt {
 flex: 0 0 50%;            
 box-sizing: border-box; 
-background-color: yellow;
+background-color: #FFCC00;
 border: 2px solid transparent;
 padding: 0 20px;
 display: flex;
@@ -778,8 +783,9 @@ margin-right: 0;
 
 /* Contenedor general de la sección de productos especiales */
 .productos-especiales-section {
-  max-width: 1400px;       
-  margin: 2rem 0;          
+  max-width: 1400px;     
+  margin-right: auto;
+  margin-left: auto;       
   padding: 0 20px;         
   box-sizing: border-box;  
   display:flex
@@ -802,7 +808,7 @@ margin-right: 0;
   display: inline-block;
   width: 1rem;
   height: 1rem;
-  background-color: yellow;
+  background-color: #FFCC00;
   margin-right: 0.5rem;
 }
 
@@ -871,7 +877,7 @@ margin-right: 0;
   margin-right: 0.1rem;
 }
 .producto-calificacion .star.filled {
-  color: yellow;
+  color: #FFCC00;
 }
 
 /* Sección de precios */
@@ -897,7 +903,7 @@ margin-right: 0;
 /* Botón Agregar al carrito */
 .agregar-carrito {
   align-self: flex-start;
-  background-color: yellow;
+  background-color: #FFCC00;
   border: 2px solid transparent;
   padding: 0.5rem 1rem;
   font-size: 0.8rem;
@@ -908,7 +914,7 @@ margin-right: 0;
 }
 .agregar-carrito .icon-carrito {
   font-size: 0.9rem;
-  color: yellow;
+  color: #FFCC00;
 }
 
 
@@ -944,7 +950,7 @@ margin-right: 0;
   display: inline-block;
   width: 8px;
   height: 8px;
-  background-color: yellow;
+  background-color: #FFCC00;
   margin-right: 0.5rem;
 }
 
@@ -1017,7 +1023,7 @@ margin-right: 0;
 
 /* Sección Newsletter */
 .newsletter-section {
-  background-color: yellow;
+  background-color: #FFCC00;
   padding: 1rem 20px;
 }
 
@@ -1044,7 +1050,7 @@ margin-right: 0;
   display: inline-block;
   width: 6px;       
   height: 6px;
-  background-color: yellow;
+  background-color: #FFCC00;
   border: 1px solid transparent;
 }
 
@@ -1130,7 +1136,7 @@ margin-right: 0;
   display: block;
   width: 30px;
   height: 2px;
-  background-color: yellow;
+  background-color: #FFCC00;
   margin-bottom: 0.5rem;
 }
 
@@ -1160,7 +1166,7 @@ margin-right: 0;
 }
 
 .admin {
-  color: yellow;
+  color: #FFCC00;
   font-weight: bold;
 }
 
@@ -1196,7 +1202,7 @@ margin-right: 0;
 }
 
 .contact-item i {
-  color: yellow;            
+  color: #FFCC00;            
   font-size: 1rem;          
   margin-right: 0.5rem;
 }
@@ -1231,7 +1237,7 @@ margin-right: 0;
 .final-brand h1 {
   font-size: 2rem;
   color: black;
-  background-color: yellow;
+  background-color: #FFCC00;
   padding: 0.3rem 0.5rem;
   margin: 0;
 }
