@@ -1,0 +1,290 @@
+:root {
+  --clr-black: #1c1c1c;
+  --clr-gray: #ececec;
+  --clr-white: #f7f7f7;
+  --clr-red: #D53232;
+
+  --type-normal: #A8A878;
+  --type-fire: #f08030;
+  --type-water: #6890f0;
+  --type-grass: #78c850;
+  --type-electric: #f8d030;
+  --type-ice: #98d8d8;
+  --type-fighting: #c03028;
+  --type-poison: #a040a0;
+  --type-ground: #e0c068;
+  --type-flying: #a890f0;
+  --type-psychic: #f85888;
+  --type-bug: #A8B820;
+  --type-rock: #88a038;
+  --type-ghost: #705898;
+  --type-dark: #705848;
+  --type-dragon: #7038f8;
+  --type-steel: #8888d0;
+  --type-fairy: #c89bda;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--clr-black);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav {
+  width: 100%;
+  position: relative;
+  background-color: var(--clr-red);
+  color: var(--clr-white);
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Primera fila: nav-top */
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-center {
+  flex: 1;
+  margin: 0 50px;
+}
+
+.nav-left img {
+  max-height: 60px;
+  cursor: pointer;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: var(--clr-gray);
+}
+
+.search-button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+  background: var(--clr-gray);
+  color: var(--clr-black);
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.search-button i {
+  margin-left: 10px;
+}
+
+/* Segunda fila: nav-bottom */
+.nav-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: var(--clr-gray);
+  color: var(--clr-black);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--clr-black);
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: var(--clr-black);
+  font-weight: bold;
+}
+
+/* Colores por categoría */
+.fire { background-color: var(--type-fire); }
+.water { background-color: var(--type-water); }
+.grass { background-color: var(--type-grass); }
+.electric { background-color: var(--type-electric); }
+.psychic { background-color: var(--type-psychic); }
+.ice { background-color: var(--type-ice); }
+.dragon { background-color: var(--type-dragon); }
+.dark { background-color: var(--type-dark); }
+.fairy { background-color: var(--type-fairy); }
+.normal { background-color: var(--type-normal); }
+.fighting { background-color: var(--type-fighting); }
+.flying { background-color: var(--type-flying); }
+.poison { background-color: var(--type-poison); }
+.ground { background-color: var(--type-ground); }
+.rock { background-color: var(--type-rock); }
+.bug { background-color: var(--type-bug); }
+.ghost { background-color: var(--type-ghost); }
+.steel { background-color: var(--type-steel);}
+
+.dropdown-content a:hover {
+  opacity: 0.8;
+}
+
+.nav-bottom-right img {
+  max-height: 50px;
+}
+
+@media (max-width: 480px) {
+  .nav-top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-center {
+    margin: 5px 0;
+    width: 95%;
+  }
+  .search-input {
+    padding: 6px;
+    font-size: 0.9em;
+  }
+  .search-button {
+    padding: 6px 15px;
+    font-size: 0.8em;
+  }
+  .dropdown-button {
+    padding: 6px 10px;
+    font-size: 0.8em;
+  }
+  .dropdown-content a {
+    padding: 6px 10px;
+    font-size: 0.8em;
+  }
+  .nav-bottom {
+    flex-direction: column;
+  }
+}
+
+/* Apartado de generaciones */
+.generation-section {
+  background-color: var(--clr-black);
+  padding: 5px 0;
+  text-align: center;
+}
+
+.generation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.gen-button {
+  background-color: var(--clr-gray);
+  color: var(--clr-black);
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: default;
+  transition: opacity 0.3s ease;
+}
+
+.gen-button:hover {
+  opacity: 0.8;
+}
+
+#listapokemon {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pokemon {
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+.pokemon-tipos {
+  display: flex;        
+  align-items: center;
+  justify-content: center;
+  gap: 8px;              
+}
+
+.pokemon-tipos p {
+  font-size: 1rem;    
+  margin: 0;             
+}
+
+
+.pokemon-imagen img {
+  max-width: 100%;
+  max-height: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.pokemon-info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.pokemon-info .nombre-contenedor,
+.pokemon-info .pokemon-tipos,
+.pokemon-info .pokemon-stats {
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+@media (max-width: 1200px) {
+  #listapokemon {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  #listapokemon {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  #listapokemon {
+    grid-template-columns: 1fr;
+  }
+}
