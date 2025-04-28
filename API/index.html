@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav" id="main-nav">
+        <div class="nav-top">
+          <div class="nav-left">
+            <img src="./ASSETS/pokedex 1.png" alt="Logo Pokedex">
+          </div>
+          <div class="nav-center">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Busca a tu POKEMON"
+            >
+          </div>
+          <div class="nav-right">
+            <button class="search-button">
+              BUSCAR
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="nav-bottom">
+          <div class="nav-bottom-center">
+            <div class="dropdown">
+              <button class="dropdown-button">
+                Filtrar por
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#" class="btn-header fire">Fire</a>
+                <a href="#" class="btn-header water">Water</a>
+                <a href="#" class="btn-header grass">Grass</a>
+                <a href="#" class="btn-header electric">Electric</a>
+                <a href="#" class="btn-header psychic">Psychic</a>
+                <a href="#" class="btn-header ice">Ice</a>
+                <a href="#" class="btn-header dragon">Dragon</a>
+                <a href="#" class="btn-header dark">Dark</a>
+                <a href="#" class="btn-header fairy">Fairy</a>
+                <a href="#" class="btn-header normal">Normal</a>
+                <a href="#" class="btn-header fighting">Fighting</a>
+                <a href="#" class="btn-header flying">Flying</a>
+                <a href="#" class="btn-header poison">Poison</a>
+                <a href="#" class="btn-header ground">Ground</a>
+                <a href="#" class="btn-header rock">Rock</a>
+                <a href="#" class="btn-header bug">Bug</a>
+                <a href="#" class="btn-header ghost">Ghost</a>
+                <a href="#" class="btn-header steel">Steel</a>
+              </div>
+            </div>
+          </div>
+          <div class="nav-bottom-right">
+            <img src="./ASSETS/POKEMONDARK.png" alt="Pokemon Dark" class="pokemon-dark">
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="generation-section">
+      <div class="generation-buttons">
+        <button class="gen-button">1ra Generación</button>
+        <button class="gen-button">2da Generación</button>
+        <button class="gen-button">3ra Generación</button>
+      </div>
+    </section>
+
+    <main>
+      <div id="todos">
+        <div class="todos" id="listapokemon">
+        </div>
+      </div>
+    </main>
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
