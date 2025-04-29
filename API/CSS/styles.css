@@ -24,12 +24,56 @@
   --type-fairy: #c89bda;
 }
 
+/* Colores mas profundos*****
+
+  --type-grass: #1F9F63;
+  --type-fire: #C14F1A;
+  --type-water: #0D98A0;
+  --type-bug: #495D24;
+  --type-electric: #C8A000;
+  --type-psychic: #9E4475;
+  --type-ice: #6CA6C1;
+  --type-dragon: #5A3EAB;
+  --type-dark: #463C32;
+  --type-fairy: #A975B0;
+  --type-normal: #A0958E;
+  --type-fighting: #8B2E2E;
+  --type-flying: #7E85C1;
+  --type-poison: #7B4085;
+  --type-ground: #B68F46;
+  --type-rock: #756B3F;
+  --type-steel: #71768A;
+  --type-ghost: #55497B;
+*/
+
+.pokemon.fire { background-color: var(--type-fire); }
+.pokemon.water { background-color: var(--type-water); }
+.pokemon.grass { background-color: var(--type-grass); }
+.pokemon.electric { background-color: var(--type-electric); }
+.pokemon.psychic { background-color: var(--type-psychic); }
+.pokemon.ice { background-color: var(--type-ice); }
+.pokemon.dragon { background-color: var(--type-dragon); }
+.pokemon.dark { background-color: var(--type-dark); }
+.pokemon.fairy { background-color: var(--type-fairy); }
+.pokemon.normal { background-color: var(--type-normal); }
+.pokemon.fighting { background-color: var(--type-fighting); }
+.pokemon.flying { background-color: var(--type-flying); }
+.pokemon.poison { background-color: var(--type-poison); }
+.pokemon.ground { background-color: var(--type-ground); }
+.pokemon.rock { background-color: var(--type-rock); }
+.pokemon.bug { background-color: var(--type-bug); }
+.pokemon.ghost { background-color: var(--type-ghost); }
+.pokemon.steel { background-color: var(--type-steel); }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: var(--clr-black);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  background-color: var(--clr-black);
 }
 
 ul {
@@ -239,6 +283,15 @@ ul {
   background-color: white;
 }
 
+.pokemon.dual-type {
+  background: linear-gradient(to right, var(--type-primary) 50%, var(--type-secondary) 50%);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 .pokemon-tipos {
   display: flex;        
   align-items: center;
@@ -247,8 +300,7 @@ ul {
 }
 
 .pokemon-tipos p {
-  font-size: 1rem;    
-  margin: 0;             
+  background: none;
 }
 
 
