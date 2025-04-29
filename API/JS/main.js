@@ -4,7 +4,7 @@ const URL = "https://pokeapi.co/api/v2/pokemon/";
 
 // Función para cargar todos los Pokémon en orden
 function loadAllPokemon() {
-  listaPokemon.innerHTML = ""; // Limpia la lista antes de agregar nuevos Pokémon
+  listaPokemon.innerHTML = "";
 
   const promesas = [];
 
@@ -14,13 +14,12 @@ function loadAllPokemon() {
 
   Promise.all(promesas)
     .then(pokemonArray => {
-      pokemonArray.sort((a, b) => a.id - b.id); // Ordenamos los Pokémon por su ID
+      pokemonArray.sort((a, b) => a.id - b.id);
       pokemonArray.forEach(poke => mostrarPokemon(poke));
     })
     .catch(error => console.error("Error en la carga de Pokémon:", error));
 }
 
-// Carga inicial de Pokémon en orden
 loadAllPokemon();
 
 function mostrarPokemon(poke) {
@@ -28,11 +27,20 @@ function mostrarPokemon(poke) {
     .map(type => `<p class="${type.type.name} tipo">${type.type.name}</p>`)
     .join("");
 
-  // Formatea el ID para que siempre tenga tres dígitos
   let pokeId = poke.id.toString().padStart(3, "0");
 
   const div = document.createElement("div");
   div.classList.add("pokemon");
+
+  if (poke.types.length > 0) {
+    div.classList.add(poke.types[0].type.name.toLowerCase());
+    div.style.setProperty("--type-primary", `var(--type-${poke.types[0].type.name.toLowerCase()})`);
+  }
+
+  if (poke.types.length > 1) {
+    div.classList.add("dual-type");
+    div.style.setProperty("--type-secondary", `var(--type-${poke.types[1].type.name.toLowerCase()})`);
+  }
 
   div.innerHTML = `
     <div class="pokemon-imagen">
@@ -75,7 +83,7 @@ botonesDropdown.forEach(boton => {
         const pokemonsFiltrados = pokemonArray.filter(poke =>
           poke.types.some(tipo => tipo.type.name === tipoSeleccionado)
         );
-        pokemonsFiltrados.sort((a, b) => a.id - b.id); 
+        pokemonsFiltrados.sort((a, b) => a.id - b.id);
         pokemonsFiltrados.forEach(poke => mostrarPokemon(poke));
       })
       .catch(error => console.error("Error en el filtrado por tipo:", error));
