@@ -23,8 +23,11 @@ Aqui se encontraran diversos ejercicios hechos por mi parte de diferentes lengua
 4. **VULNERABILIDADES**
    - [Vulnerabilidad NoSQL](https://github.com/Ferfloza3101/ServicioSocial/tree/main/NoSQL).
 
-4. **PROYECTOS WEB**
+5. **PROYECTOS WEB**
    - [Ferreteria Web](https://github.com/Ferfloza3101/ServicioSocial/tree/main/Proyectos%20web).
+
+6. **CONSUMO DE API**
+   - [Ferreteria Web](https://github.com/Ferfloza3101/ServicioSocial/tree/main/API).
 
 
 Cualquier aspecto respecto a mis trabajos, quedo al pendiente de sugerencias y correcciones. Sin mas, un Saludo.
