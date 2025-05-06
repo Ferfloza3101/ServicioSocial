@@ -27,7 +27,7 @@ Aqui se encontraran diversos ejercicios hechos por mi parte de diferentes lengua
    - [Ferreteria Web](https://github.com/Ferfloza3101/ServicioSocial/tree/main/Proyectos%20web).
 
 6. **CONSUMO DE API**
-   - [Ferreteria Web](https://github.com/Ferfloza3101/ServicioSocial/tree/main/API).
+   - [POKEDEX](https://github.com/Ferfloza3101/ServicioSocial/tree/main/API).
 
 
 Cualquier aspecto respecto a mis trabajos, quedo al pendiente de sugerencias y correcciones. Sin mas, un Saludo.
